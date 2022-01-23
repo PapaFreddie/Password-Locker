@@ -1,0 +1,19 @@
+from user import User
+
+def main():
+
+    if True:
+        print("Welcome to password locker!")
+        print('\n')
+        print("Select a code to navigate through: to create new user use 'new: to login to your account 'log and 'ex' to exit")
+        code = input().lower()
+        print('\n')
+
+    if code == 'new':
+        print('create username')
+        created_username = input()
+
+        print('create password')
+        created_user_password = input()
+        print('confirm password')
+        confirm_password = input()
