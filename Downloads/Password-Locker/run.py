@@ -17,3 +17,11 @@ def main():
         created_user_password = input()
         print('confirm password')
         confirm_password = input()
+
+
+    while confirm_password != created_user_password:
+        print('Passwords do not match!')
+        print('Enter valid password to match the previous!')
+        created_user_password = input()
+        print('Confirm your password')
+        confirm_password = input()
