@@ -42,4 +42,15 @@ def main():
         print("Enter your password")
         entered_password = input()
 
+
+        
+    else:
+        print(f" Welcome {entered_username} to your account!")
+        print('\n')
+
+
+
+
+
+
     
