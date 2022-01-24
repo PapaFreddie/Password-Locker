@@ -6,7 +6,7 @@ def main():
     while True:
         print("Welcome to password locker!")
         print('\n')
-        print("Select a code to navigate through: to create new user use 'new: to login to your account 'log and 'ex' to exit")
+        print("Select a code to navigate through: to create new user use 'new: to login to your account 'log or 'ex' to exit")
         code = input().lower()
         print('\n')
 
@@ -37,7 +37,7 @@ def main():
                 print("Your Password")
                 entered_password = input()
 
-            if  entered_username != created_username or entered_password != created_user_password:
+            while  entered_username != created_username or entered_password != created_user_password:
                 print("Invalid username or password!")
                 print("Username")
                 entered_username = input()

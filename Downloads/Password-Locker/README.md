@@ -20,7 +20,6 @@ The user would like to.... :
 
 #### The application requires the following installations to operate 
 * python3.10.2
-* pyperclip
 * pip
 
 #### Cloning
@@ -36,7 +35,7 @@ The user would like to.... :
 ### Running the Application
 * To run the application, open the cloned file in terminal and run the following commands:
 
-        $ chmod +x interface.py
+        $ -
         $ ./interface.py
 * To run test for the application
         $ python3 user_test.py
