@@ -3,7 +3,7 @@ from user import User
 
 def main():
 
-    if True:
+    while True:
         print("Welcome to password locker!")
         print('\n')
         print("Select a code to navigate through: to create new user use 'new: to login to your account 'log and 'ex' to exit")
@@ -37,7 +37,7 @@ def main():
                 print("Your Password")
                 entered_password = input()
 
-            if entered_username != created_username or entered_password != created_user_password:
+            if  entered_username != created_username or entered_password != created_user_password:
                 print("Invalid username or password!")
                 print("Username")
                 entered_username = input()
@@ -60,8 +60,8 @@ def main():
             default_user_password = input()
             print('\n')
 
-            while default_username != 'testuser' or default_user_password != '05121998':
-                print("Wrong Username or Password. Username 'testuser' Password '05121998")
+            while default_username != 'testuser' or default_user_password != '05121':
+                print("Wrong Username or Password. Username 'testuser' Password '05121")
                 print("Username")
                 default_username = input()
 
