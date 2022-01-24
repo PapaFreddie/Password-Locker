@@ -3,7 +3,7 @@ import unittest
 
 from user import User
 
-class TestUser(unittest.TextCase):
+class TestUser(unittest.TestCase):
     def tearDown(self):
         User.username = []
     
@@ -23,4 +23,13 @@ class TestUser(unittest.TextCase):
         
         self.new_username.save_username()
         test_username = User('abc', 'def', 'ghi', 'jkl')
-        test
+        test_username.save_user()
+        self.assertEqual(len(User.user_username), 2)
+
+
+
+
+
+
+if __name__ == '__main__':
+    unittest.main()
