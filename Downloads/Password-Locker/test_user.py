@@ -1,4 +1,3 @@
-from cgi import test
 import unittest 
 
 from user import User
@@ -6,7 +5,7 @@ from user import User
 class TestUser(unittest.TestCase):
     def tearDown(self):
         User.username = []
-    
+
     def SetUp(self):
         self.new_username = User('Papa', '05121')
     
@@ -17,7 +16,7 @@ class TestUser(unittest.TestCase):
 
     def test_save_user(self):
         self.new_username.save_user()
-        self.assertEqual(len(User.username),1)
+        self.assertEqual(len(User.username), 1)
 
     def test_save_multiple_unsernames(self):
         
@@ -25,6 +24,8 @@ class TestUser(unittest.TestCase):
         test_username = User('abc', 'def', 'ghi', 'jkl')
         test_username.save_user()
         self.assertEqual(len(User.user_username), 2)
+
+
 
 
 
