@@ -11,10 +11,10 @@ def main():
         print('\n')
 
         if code == 'new':
-            print('create username')
+            print('Create Username')
             created_username = input()
 
-            print('create password')
+            print('Create Password')
             created_user_password = input()
             print('confirm password')
             confirm_password = input()
@@ -28,9 +28,9 @@ def main():
                 confirm_password = input()
 
             else:
-                print(f'Hurray!!! {created_username}, Your account was created successfully!')
+                print(f'Hurray {created_username}!!, Your account was created successfully!')
                 print('\n')
-                print("Continue to login")
+                print("Continue to Login")
                 print("Username")
                 entered_username = input()
 
