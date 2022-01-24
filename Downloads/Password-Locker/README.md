@@ -35,7 +35,7 @@ The user would like to.... :
 ### Running the Application
 * To run the application, open the cloned file in terminal and run the following commands:
 
-        $ -
+        $ chmod +x run.py
         $ ./interface.py
 * To run test for the application
         $ python3 user_test.py
